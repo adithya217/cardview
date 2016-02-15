@@ -14,13 +14,13 @@ The original plugin is quite good, with multiple effects such as slide, rotate a
 Reason for this shift to js based animation is that while the original plugin works well when the swipe events occur normally, when the swiping becomes faster, the transitionend events are not fired correctly, they are even skipped some times. The transition effects become interleaved, causing wrong updates to the deck. This causes the cardDeck to behave as if it is stuck and unresponsive when it is not so. Not good when used in a hybrid mobile app.
 
 Some other new, useful features:
-1. Added a method to update the card dataset anytime after applying the cardView - useful in ajax implementations.
-2. Added callbacks to indicate swiping being done after the first / last cards are reached.
-3. Made loopability of the card deck optional.
-4. Added a method to goto first card from any point - without the animation, however, for now.
-5. Made touch move distance for recognizing configurable.
-6. Made transition durations and their lower and higher bounds configurable.
-7. Ability to specify which card of the given dataset to start from.
+* Added a method to update the card dataset anytime after applying the cardView - useful in ajax implementations.
+* Added callbacks to indicate swiping being done after the first / last cards are reached.
+* Made loopability of the card deck optional.
+* Added a method to goto first card from any point - without the animation, however, for now.
+* Made touch move distance for recognizing configurable.
+* Made transition durations and their lower and higher bounds configurable.
+* Ability to specify which card of the given dataset to start from.
 
 
 As of now, this is the first version of this implementation and supports only the vertical sliding effect. Remaining effects from the original plugin will be added soon.
